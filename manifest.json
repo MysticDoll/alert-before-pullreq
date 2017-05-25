@@ -6,7 +6,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://github.com/*/*/pulls"
+        "https://github.com/*/*"
       ],
       "js": [
         "content_script.js"
@@ -17,6 +17,6 @@
     "embeded-script.js"
   ],
   "permissions": [
-    "https://github.com/*/*/pulls"
+    "https://github.com/*/*"
   ]
 }
