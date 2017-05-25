@@ -1,0 +1,22 @@
+{
+  "name": "alert before pullreq",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "alert before create pull request",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*/*/pulls"
+      ],
+      "js": [
+        "content_script.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "embeded-script.js"
+  ],
+  "permissions": [
+    "https://github.com/*/*/pulls"
+  ]
+}
